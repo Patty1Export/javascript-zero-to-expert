@@ -237,6 +237,7 @@ if(height) {
 
 */
 
+/*
 const age = '18';
 if (age === 18) //both sides are exactly the same 
 {
@@ -266,9 +267,29 @@ if(favourite !== 23) {
     console.log('Why not 23')
 }
 
+*/
 
+const hasDriverLicense = true;
+const hasGoodVision = true;
 
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
 
+// if(hasDriverLicense && hasGoodVision) {
+//     console.log('Sarah is able to drive!')
+// } else {
+//     console.log('Someone else should drive....')
+// }
+
+const isTired = false;
+console.log(hasDriverLicense && hasGoodVision && isTired);
+
+if(hasDriverLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!')
+} else {
+    console.log('Someone else should drive....')
+}
 
 
 
