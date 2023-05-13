@@ -384,7 +384,7 @@ if(scoreDolphins > scoreKoalas  && scoreDolphins >= 100) {
 }
 
 */
-
+/*
 const day = 'friday'
 
 switch(day){
@@ -425,12 +425,19 @@ if(day === 'monday') {
 } else {
     console.log('Not a valid day!')
 }
+*/
 
+// Expression - meaning produce a value
+3 + 4 
+1991
+true && false && !false // booelan value is also an expression
 
+if(23 > 10) {
+    const str = '23 is bigger';
+}
 
-
-
-
+const me = "Jonas"
+console.log(`I'm ${2037 - 1991} years old ${me}`)
 
 
 
