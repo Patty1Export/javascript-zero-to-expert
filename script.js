@@ -107,9 +107,9 @@ const fruitProcessor = function(apples, oranges) {
 console.log(fruitProcessor(2, 3));
 
  */
-
+/*
 const calcAge = function(birthYeah){
-    return 2037 = birthYeah;
+    return 2037 - birthYeah;
 }
 
 const yearsUntilRequirement = (birthYeah, firstName) => {
@@ -143,3 +143,37 @@ const yearsUntilRequirement = (birthYeah, firstName) => {
 
 
  const age = calcAge(1991, 'Jonas');
+*/
+
+
+
+// Coding Challenge Number 1
+
+const calcAverage = function(a, b, c) {
+    return (a + b + c) / 3;
+}
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
+
+const checkWinner =  function(avgDolphins, avgKoalas) {
+    if(avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins wins (${avgDolphins} vs ${avgKoalas} )`);
+        return;
+    } else if (avgKoalas >=2 * avgDolphins){
+       console.log(`Koalas wins ( ${avgKoalas} vs ${avgDolphins} )`)
+    } else {
+        console.log('No one wins')
+    }
+}
+
+
+// checkWinner(44, 23, 71);
+// checkWinner(65, 54, 49);
+
+
+checkWinner(scoreDolphins, scoreKoalas);
+ scoreDolphins = calcAverage(85, 54, 41);
+ scoreKoalas = calcAverage(23, 34, 27);
+
+ 
+checkWinner(scoreDolphins, scoreKoalas);
