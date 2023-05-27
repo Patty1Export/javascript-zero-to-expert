@@ -297,7 +297,7 @@ const jonas = {
 
 */
 
-
+/*
 const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedtmann',
@@ -305,6 +305,8 @@ const jonas = {
     job: 'teacher',
     friends: ['Michael', 'Peter', 'Steven']
 }
+
+*/
 /*
 console.log(jonas)
 
@@ -332,7 +334,7 @@ jonas['twitter'] = '@jonasschmedtman'
 console.log(jonas)
 */
 
-
+/*
 // Challenge
 console.log(jonas.firstName + " has " + jonas.friends.length  + ' friends and his bestfriend is called'  + jonas.friends[0])
 
@@ -340,4 +342,40 @@ console.log(jonas.firstName + " has " + jonas.friends.length  + ' friends and hi
 
 //template literal
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his bestfriend is called ${jonas.friends[0]}`)
+*/
 
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYeah: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriverLicense: false,
+    // calcAge: function (birthYeah) {
+    //     return 2037 - birthYeah;
+    // }
+    calcAge: function () {
+        // console.log(this)
+        this.age = 2037 - this.birthYeah;
+        return this.age;
+    },
+    getSummary: function() {
+        return `${jonas.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and ${this.hasDriverLicense? 'a': 'no'} driver's license.`
+    }
+};
+
+
+console.log(jonas.calcAge())
+// console.log(jonas['calcAge'](1991))
+
+console.log(jonas.age)
+console.log(jonas.age)
+console.log(jonas.age)
+
+
+// Challenge
+// "Jonas is a 46 year old teacher, and he has a driver's license"
+
+
+console.log(jonas.getSummary())
