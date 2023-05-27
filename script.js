@@ -344,7 +344,7 @@ console.log(jonas.firstName + " has " + jonas.friends.length  + ' friends and hi
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his bestfriend is called ${jonas.friends[0]}`)
 */
 
-
+/*
 const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedtmann',
@@ -379,3 +379,66 @@ console.log(jonas.age)
 
 
 console.log(jonas.getSummary())
+*/
+
+
+// Patricia Coding Challenge 
+/*
+const mark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+    getCalcBMIMark: function() {
+        return this.mass / this.height ** 2
+    }
+}
+
+
+const john = {
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+    getCalcBMIJohn: function() {
+        return this.mass / this.height ** 2
+    }
+}
+
+
+console.log(`${john.fullName}'s BMI(${john.getCalcBMIJohn()}) is higher than ${mark.fullName}'s (${mark.getCalcBMIMark()}) `);
+
+*/
+
+
+//Coding Challenge Solution 
+const mark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+    getCalcBMI: function() {
+        this.bmi = this.mass / this.height ** 2
+        return this.bmi
+    }
+}
+
+
+const john = {
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+    getCalcBMI: function() {
+        this.bmi = this.mass / this.height ** 2
+        return this.bmi
+    }
+}
+
+john.getCalcBMI();
+mark.getCalcBMI();
+
+console.log(mark.bmi, john.bmi)
+
+if (john.bmi > mark.bmi) {
+    console.log(`${john.fullName}'s BMI(${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi}) `);
+
+} else if (mark.bmi > john.bmi) {
+    console.log(`${mark.fullName}'s BMI(${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`);
+}
