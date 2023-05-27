@@ -225,7 +225,7 @@ const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -
 console.log(ages)
 */
 
-
+/*
 const friends = ['Michael', 'Steven', 'Peter']
 
 
@@ -263,7 +263,37 @@ if (friends.includes('Steven')) {
     console.log('You have a friend called Steven')
 }
 
+*/
 
+
+/*
+const calcTip = function (bill, tip) {
+    return bill + tip;
+}
+
+
+const bills = [125,555,44];
+const tip = [40,20,10];
+
+
+const tip1 = calcTip(bills[0], tip[0]);
+const tip2 = calcTip(bills[1], tip[1]);
+const tip3 = calcTip(bills[bills.length - 1], tip[tip.length - 1]);
+console.log(tip1, tip2, tip3);
+
+const total = [ calcTip(bills[0], tip[0]), calcTip(bills[1], tip[1]), calcTip(bills[bills.length - 1], tip[tip.length - 1])];
+console.log(total)
+
+*/
+
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 = 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+}
 
 
 
