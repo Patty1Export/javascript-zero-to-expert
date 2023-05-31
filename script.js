@@ -91,7 +91,7 @@ console.log(age3);
 
 
 
-
+/*
 
 const cutPieces = function (fruit) {
     return fruit * 4;
@@ -106,4 +106,40 @@ const fruitProcessor = function(apples, oranges) {
 
 console.log(fruitProcessor(2, 3));
 
- 
+ */
+
+const calcAge = function(birthYeah){
+    return 2037 = birthYeah;
+}
+
+const yearsUntilRequirement = (birthYeah, firstName) => {
+    const age = 2037 - birthYeah;
+    const retirement = 65 - age;
+    // return retirement;
+     return `${firstName}  retires in ${retirement} years`
+ }
+
+//Function Declaration
+ function calcAge(birthYear) {
+    return 2037 - birthYear;
+ }
+
+//Function Expression
+ const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+ }
+
+
+ //Arrow Function
+ const calcAge = birthYear => 2037 - birthYear;
+
+
+
+ function calcAge(birthYear, firstName) {
+    const age = 2037 - birthYear;
+    console.log(`${firstName} is ${age} years old`);
+    return age;
+ }
+
+
+ const age = calcAge(1991, 'Jonas');
