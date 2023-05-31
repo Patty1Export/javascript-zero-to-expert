@@ -440,7 +440,7 @@ const me = "Jonas"
 console.log(`I'm ${2037 - 1991} years old ${me}`)
 
 */
-
+/*
 const age = 23;
 age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water💧');
 
@@ -459,10 +459,48 @@ console.log(drink2)
 
 
 console.log(`I like to drink wine ${age >= 18 ? 'wine🍷' : 'water 💧'}`);
+*/
 
 
+// const tip = 275;
+
+// const calculateTip = tip * 0.2;
+
+// const finalValue = tip + calculateTip;
+
+// const result = calculateTip >= 50 && calculateTip <= 300 ? `The bill was ${tip}, the tip was ${calculateTip}, and the total value ${finalValue}` : `The bill was ${tip}, the tip was ${calculateTip}, and the total value ${finalValue}` ;
+
+// console.log(result)
 
 
+// if( bill >= 50 && bill <= 300 ) {
+//     const tip = bill * 0.15
+//     const finalValue = bill + tip;
+//     console.log(tip, finalValue)
+// } else {
+//     const tip = bill * 0.2
+//     const finalValue = bill + tip;
+//     console.log(tip, finalValue)
+// }
+
+// const tipFifteen = bill * 0.15;
+// const tipTwenty = bill * 0.15;
+// const finalValue = bill + tip;
+
+//Coding Challenge #4 
+// const bill = 430;
+// const result = bill >= 50 && bill <= 300 ? `The bill was ${bill}, the tip was ${bill * 0.15}, and the totals value ${bill + (bill * 0.15)}` :`The bill was ${bill}, the tip was ${bill * 0.20}, and the totals value ${bill + (bill * 0.20)}`
+
+// console.log(result) 
+// //Results
+// 275 = The bill was 275, the tip was 41.25, and the totals value 316.25
+// 40 = The bill was 275, the tip was 41.25, and the totals value 316.25
+// 430 = The bill was 430, the tip was 86, and the totals value 516
+
+// Other Solution
+const bill = 275;
+const tip = bill <=300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the totals value ${bill + tip}`);
 
 
 
