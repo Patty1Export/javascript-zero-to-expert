@@ -294,7 +294,7 @@ if(hasDriverLicense && hasGoodVision && !isTired) {
 
 
 
-
+/*
 
 // Coding Challenge Number 3
 
@@ -334,7 +334,7 @@ if( 100 >= dolphinsBonus2){
     console.log('Koalas is equal to dolphine')
 }
 
-
+*/
 
 //Coding Challenge Number 3 Solution 
 
@@ -365,7 +365,7 @@ if( 100 >= dolphinsBonus2){
 //     console.log('Both win the trophy')
 // }
 
-
+/*
 //Bonus 2
 
 const scoreDolphins = (97 + 112 + 80) / 3;
@@ -383,9 +383,48 @@ if(scoreDolphins > scoreKoalas  && scoreDolphins >= 100) {
     console.log('No one wins the trophy')
 }
 
+*/
+
+const day = 'friday'
+
+switch(day){
+    case 'monday':
+        console.log('Plan course structure');
+        console.log('Go to coding meet up');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write Code Example');
+        break;
+    case 'friday':
+        console.log('Record Videos')
+        break;
+    case 'saturday':
+        console.log('Enjoy the weekend :D');
+        break;
+    default:
+        console.log('Not a valid day!')
+
+}
 
 
-
+if(day === 'monday') {
+    console.log('Plan course structure');
+    console.log('Go to coding meet up');
+} else if(day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('Write Code Example');
+} else if(day === 'friday') {
+    console.log('Record Videos')
+} else if (day === 'saturday') {
+    console.log('Enjoy the weekend :D');
+} else {
+    console.log('Not a valid day!')
+}
 
 
 
