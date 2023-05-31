@@ -1,3 +1,4 @@
+/*
 const markWeightsData1 = 78;
 const markHeightsData1 = 1.69;
 
@@ -33,3 +34,28 @@ const markHigherBMI = true;
 console.log(markHigherBMI == bmiMarkTest1 > bmiJohnTest1) // True
 // Mark has a Lower BMI than John
 console.log(markHigherBMI == bmiMarkTest2 > bmiJohnTest2) // False
+
+*/
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+console.log(jonas);
+
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(jonasNew);
+
+console.log(`Just a regular string...`)
+
+//Multi line String
+console.log('String with \n\
+     multiple \n\
+lines');
+
+console.log(`String 
+multiple
+lines`);
