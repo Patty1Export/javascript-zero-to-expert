@@ -237,6 +237,7 @@ if(height) {
 
 */
 
+/*
 const age = '18';
 if (age === 18) //both sides are exactly the same 
 {
@@ -266,12 +267,69 @@ if(favourite !== 23) {
     console.log('Why not 23')
 }
 
+*/
+/*
+const hasDriverLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+
+// if(hasDriverLicense && hasGoodVision) {
+//     console.log('Sarah is able to drive!')
+// } else {
+//     console.log('Someone else should drive....')
+// }
+
+const isTired = false;
+console.log(hasDriverLicense && hasGoodVision && isTired);
+
+if(hasDriverLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!')
+} else {
+    console.log('Someone else should drive....')
+}
+*/
 
 
+// Coding Challenge Number 3
+
+const dolphins = (96 + 108 + 89) / 3;
+const koalas = (88 + 91 + 110) / 3;
+console.log(dolphins, koalas)
 
 
+if (dolphins > koalas ) {
+    console.log('Dolphins has greater average scores than koalas')
+} else {
+    console.log('Koalas has greater average scores than dolphins')
+}
+
+// Bonus 1
+const dolphinsBonus1 = (97 + 112 + 101) / 3;
+const koalasBonus1 = (109 + 95 + 123 )/ 3;
+console.log(dolphinsBonus1, koalasBonus1)
+
+if( 100 < dolphinsBonus1){
+    console.log('Dolphins has greater average scores than koalas')
+} else if( 100 < koalasBonus1) {
+    console.log('Koalas has greater average scores than dolphines')
+}
 
 
+// Bonus 2
+const dolphinsBonus2 = (97 + 112 + 101) / 3;
+const koalasBonus2 = (109 + 95 + 106 ) / 3;
+console.log(dolphinsBonus2 , koalasBonus2)
+
+if( 100 >= dolphinsBonus2){
+    console.log('Dolphins has greater average scores than koalas')
+} else if( 100 >= koalasBonus2) {
+    console.log('Koalas has greater average scores than dolphines')
+} else if( dolphinsBonus2 === koalasBonus2 ) {
+    console.log('Koalas is equal to dolphine')
+}
 
 
 
